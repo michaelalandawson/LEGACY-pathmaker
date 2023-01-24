@@ -14,6 +14,6 @@ Supports multi-folder workspaces.
 
 A workspace is required.
 
-### 1.0.0
+### 0.0.1
 
 Initial release of PathMaker.
