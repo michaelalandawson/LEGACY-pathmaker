@@ -30,11 +30,6 @@ function showPathOptions() {
 	let opts: QuickPickOptions = { matchOnDescription: true, matchOnDetail: true, placeHolder: 'Select an action...', title: 'PathMaker' };
 	let items: QuickPickItem[] = [];
 
-	items.push({ label: 'Copy Path', description: resource.fsPath });
-
-	const filename = resource.fsPath.split('\\').pop();
-	items.push({ label: 'Copy Filename', description: filename });
-
 	const config = vscode.workspace.getConfiguration('pathmaker', resource);
 
 	if (!config) {
