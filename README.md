@@ -60,12 +60,6 @@ This configuration provides three path transformations:
 2. "Include", generates a path that can be used as an include file.
 3. "Parent URL", replaces the local path with a domain name, and removes the "/\_modules" folder from the path.
 
-## Releases
+## Change Log
 
-### 0.0.2
-
-Add menu support for editor context and explorer view context.
-
-### 0.0.1
-
-Initial release of PathMaker.
+[View the change log](CHANGELOG.md)
