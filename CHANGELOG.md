@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.0.4 - 2023-02-20
+
+Add PayPal donation link.
+
 ### 0.0.3 - 2023-02-19
 
 Add icons to Quick Pick list items.
