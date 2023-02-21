@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.0.5 - 2023-02-20
+
+Add extension icon to package.json.
+
 ### 0.0.4 - 2023-02-20
 
 Add PayPal donation link.
