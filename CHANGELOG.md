@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.0.6 - 2023-02-21
+
+Redesign extension icon.
+
 ### 0.0.5 - 2023-02-20
 
 Add extension icon to package.json.
