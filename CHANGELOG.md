@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.0.7 - 2023-02-21
+
+Update extension icon to add transparency.
+
 ### 0.0.6 - 2023-02-21
 
 Redesign extension icon.
