@@ -107,6 +107,10 @@
 										"isRegex": {
 											"type": "boolean",
 											"description": "Set to true if this replacement is a regular expression"
+										},
+										"flags": {
+											"type": "string",
+											"description": "Regular expression flags"
 										}
 									}
 								}
