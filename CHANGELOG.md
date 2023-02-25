@@ -1,5 +1,11 @@
 # Change Log
 
+### 0.0.9 - 2023-02-24
+
+Multiple actions (Copy, Browse) can be specified for each transformation.
+
+Improve documentation.
+
 ### 0.0.8 - 2023-02-23
 
 Add regular expression support.
