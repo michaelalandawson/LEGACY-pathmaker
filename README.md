@@ -32,45 +32,32 @@ Path separators are normalized to "/" before any user transformations are proces
 ### Transformation properties:
 
 - "name": A custom name to describe the action. This will be displayed in the Quick Pick list.
-- "action": An array of actions. Values can be "Copy" or "Browse".
+- "actions": An array of actions. Values can be "Copy" and/or "Browse".
   - ["Copy"]: Displays an option to copy the selected path to the clipboard.
   - ["Browse"]: Displays an option to open the selected path in the default browser.
   - ["Copy", "Browse"]: Displays options to copy or browse the selected path.
 - "replacements": An array of find/replace pairs. The replacements take place in the order of the array. Regular expressions are supported.
 
-### Sample configration:
+## Examples
+
+### Example transformation to replace a local path with a remote host name
 
 ```
 {
 	"pathmaker.transformations": [
 		{
 			"name": "URL",
-			"action": "Browse",
 			"replacements": [{ "find": "c:/home/mydomain.com/wwwroot", "replace": "https://mydomain.com" }]
-		},
-		{
-			"name": "Include",
-			"replacements": [{ "find": "c:/home/mydomain.com/wwwroot", "replace": "" }]
-		},
-		{
-			"name": "Parent URL",
-			"action": "Browse",
-			"replacements": [
-				{ "find": "c:/home/mydomain.com/wwwroot", "replace": "https://mydomain.com" },
-				{ "find": "/_modules", "replace": "" }
-			]
 		}
 	]
 }
 ```
 
-### Explanation of sample configuration
+Results:
 
-This configuration provides three path transformations:
+`C:\home\mydomain.com\wwwroot\index.htm` transforms to `https://mydomain.com/index.htm`
 
-1. "URL", replaces the local path with a domain name.
-2. "Include", generates a path that can be used as an include file.
-3. "Parent URL", replaces the local path with a domain name, and removes the "/\_modules" folder from the path.
+---
 
 ## Change Log
 
