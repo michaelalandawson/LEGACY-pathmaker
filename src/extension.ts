@@ -3,6 +3,12 @@ import Window = vscode.window;
 import QuickPickItem = vscode.QuickPickItem;
 import QuickPickOptions = vscode.QuickPickOptions;
 
+type Transformation = {
+	name: string;
+	actions: [action: string];
+	replacements: [{ find: string; replace: string; isRegex: boolean; flags: string }];
+};
+
 export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('pathmaker.getEditorUri', getEditorUri));
 	context.subscriptions.push(vscode.commands.registerCommand('pathmaker.getExplorerContextMenuUri', getExplorerContextMenuUri));
