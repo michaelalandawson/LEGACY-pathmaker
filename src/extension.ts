@@ -34,12 +34,11 @@ function getEditorUri() {
 	}
 
 	buildQickPickOptions(resource);
+
+	return;
 }
 
 function buildQickPickOptions(resource: any) {
-	let opts: QuickPickOptions = { matchOnDescription: true, matchOnDetail: true, placeHolder: 'Select an action...', title: 'PathMaker' };
-	let items: QuickPickItem[] = [];
-
 	const config = vscode.workspace.getConfiguration('pathmaker', resource);
 
 	if (!config) {
@@ -47,11 +46,8 @@ function buildQickPickOptions(resource: any) {
 		return;
 	}
 
-	type Transformation = {
-		name: string;
-		actions: [action: string];
-		replacements: [{ find: string; replace: string; isRegex: boolean; flags: string }];
-	};
+	let opts: QuickPickOptions = { matchOnDescription: true, matchOnDetail: true, placeHolder: 'Select an action...', title: 'PathMaker' };
+	let items: QuickPickItem[] = [];
 
 	const transformations: [] = config.get('transformations') || [];
 
