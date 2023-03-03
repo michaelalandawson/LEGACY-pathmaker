@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.0.11
+
+Add compact mode setting.
+
 ### 0.0.10
 
 Implement PathQuickPickItem (implements QuickPickItem) object to pass in custom data with each item.
